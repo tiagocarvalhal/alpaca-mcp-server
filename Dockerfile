@@ -4,6 +4,7 @@ WORKDIR /app
 
 # Copy dependencies and server file
 COPY requirements.txt alpaca_mcp_server.py ./
+COPY .github/core .github/core
 
 # Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
